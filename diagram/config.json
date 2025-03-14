@@ -1,0 +1,15 @@
+{
+    "theme": "base",
+    "themeVariables": {
+      "primaryColor": "#ffffff",
+      "primaryTextColor": "#7d88a1",
+      "primaryBorderColor": "#ffffff",
+      "lineColor": "#8ea9ec",
+      "secondaryColor": "#e8f6fc",
+      "secondaryBorderColor": "#e8f6fc",
+      "tertiaryColor": "#e8f6fc",
+      "tertiaryBorderColor": "#e8f6fc",
+      "tertiaryTextColor": "#0778d4",
+      "fontFamily": "Montserrat"
+    }
+  }

@@ -1,0 +1,44 @@
+/* 
+This file is used to style all diagram.
+Use the 'class' directive to style a specific element.
+Note that SVG elements do not support all CSS properties.
+*/
+
+.box rect {
+    /* Add subtle shadow to boxes. SVG does not support box-shadow. */
+    filter:drop-shadow( 0px 0px 3px rgb(213, 213, 213)) !important;
+}
+
+.box path {
+    /* Add subtle shadow to boxes. SVG does not support box-shadow. */
+    filter:drop-shadow(-3px -3px 3px rgb(213, 213, 213)) !important;
+}
+
+.rounded rect {
+    /* Round corners of boxes. SVG does not support border-radius. */
+    rx: 4 !important;
+    ry: 4 !important;
+}
+
+/* The label of nodes has class 'nodeLabel' */
+.container .nodeLabel {
+    font-weight: 600 !important;
+}
+
+/* The label is inside a foreignObject element */
+.container foreignObject {
+    /* HACK:
+        Mermaid seems to calculate the spacing using the default font style.
+        This means changes in font family or weight can lead to text overflowing the box.
+        This is a workaround to show the text correctly. It won't work in some cases.
+    */
+    overflow: visible !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.mirror path {
+    scale: -1 1;
+}
