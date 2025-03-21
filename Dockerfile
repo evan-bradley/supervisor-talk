@@ -1,7 +1,7 @@
 FROM minlag/mermaid-cli
 
 USER root
-RUN apk add font-montserrat font-roboto-mono
+RUN apk add font-montserrat font-roboto-mono font-awesome
 
 USER mermaidcli
 
