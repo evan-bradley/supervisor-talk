@@ -1,11 +1,11 @@
 flowchart TB
-    supervisor["fa:fa-gear Supervisor"]
     server["fa:fa-server OpAMP server"]
     collector["fa:fa-terminal Collector"]
+    supervisor["fa:fa-gear Supervisor"]
 
+    collector -->|"Status (OpAMP)"| supervisor
     supervisor <-->|OpAMP| server
     supervisor -->|exec/kill| collector
-    collector -->|Status| supervisor
 
 
 class supervisor,collector,server box;

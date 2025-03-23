@@ -1,6 +1,6 @@
-flowchart LR
-    server["fa:fa-server OpAMP server"]
+flowchart TB
     collector["fa:fa-terminal Collector"]
+    server["fa:fa-server OpAMP server"]
 
     server -->|"Config (OpAMP)"| collector
     collector -->|"Status (OpAMP)"| server
