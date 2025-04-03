@@ -3,8 +3,8 @@ flowchart TB
     collector["fa:fa-terminal Collector"]
     supervisor["fa:fa-gear Supervisor"]
 
+    server <-->|OpAMP| supervisor
     collector -->|"Status (OpAMP)"| supervisor
-    supervisor <-->|OpAMP| server
     supervisor -->|exec/kill| collector
 
 
